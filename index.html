@@ -22,6 +22,18 @@
 	console.log("Start!");
 	console.log(preparedData);
 
+	preparedData.sort((a, b)=>{
+		if(a.code>b.code){
+			return 1;
+		}
+		if(a.code<b.code){
+			return -1;
+		}
+		if(a.code==b.code){
+			return 0;
+		}
+
+	})
 	d3.select('div.Diagram').selectAll('div').data(preparedData).enter().append('div').attr('class', 'item')
 	.append('div').attr('class', 'data').append('span');
 
