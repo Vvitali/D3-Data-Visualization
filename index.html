@@ -6,12 +6,31 @@
 	<script type="text/javascript" src="./d3/d3.js"></script>
 </head>
 <body>
-	<div class="Diagram"></div>
-	<script type="text/javascript" src="./preparedData.js"></script>
-	<script type="text/javascript">
-		console.log("Start!");
-		console.log(preparedData);
-	</script>
-	
+	<style type="text/css">
+	.data{
+		background-color: steelblue;
+		padding: 2px;
+		margin: 2PX;
+	}
+	.item{
+		color: white;
+	}
+</style>
+<div class="Diagram"></div>
+<script type="text/javascript" src="./preparedData.js"></script>
+<script type="text/javascript">
+	console.log("Start!");
+	console.log(preparedData);
+
+	d3.select('div.Diagram').selectAll('div').data(preparedData).enter().append('div').attr('class', 'item')
+	.append('div').attr('class', 'data').append('span');
+
+	d3.select('div.Diagram').selectAll('div.item').data(preparedData)
+	.select('div').style('width', function (d) { return (d.code * 3) + 'px';})
+	.select('span').text(function (d) { return d.name+":"+d.code+":"+d.description;});
+
+
+</script>
+
 </body>
 </html>
