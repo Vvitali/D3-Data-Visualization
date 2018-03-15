@@ -6,6 +6,7 @@
 	<script type="text/javascript" src="./d3/d3.js"></script>
 </head>
 <body>
+	<!-- set styles for our data graphics -->
 	<style type="text/css">
 	.data{
 		background-color: steelblue;
@@ -16,30 +17,44 @@
 		color: white;
 	}
 </style>
-<div class="Diagram"></div>
+<!-- anchor for our data -->
+<div class="Charts"></div>
+
+<!-- array with the prepared data -->
 <script type="text/javascript" src="./preparedData.js"></script>
+<!-- our logic and implementation -->
 <script type="text/javascript">
-	console.log("Start!");
-	console.log(preparedData);
+	console.log("Start!"); 
+// first we have to sort the array, and we will use course code as a parametr for sorting
+//so this is standart JS sorting function
+preparedData.sort((a, b)=>{
+	if(a.code>b.code){
+		return 1;
+	}
+	if(a.code<b.code){
+		return -1;
+	}
+	if(a.code==b.code){
+		return 0;
+	}
 
-	preparedData.sort((a, b)=>{
-		if(a.code>b.code){
-			return 1;
-		}
-		if(a.code<b.code){
-			return -1;
-		}
-		if(a.code==b.code){
-			return 0;
-		}
+})
+//We have to select our div element, 
+d3.select('div.Charts')
+.selectAll('div')
+.data(preparedData)
+.enter()
+.append('div')
+.attr('class', 'item')
+.append('div').attr('class', 'data').append('span');
 
-	})
-	d3.select('div.Diagram').selectAll('div').data(preparedData).enter().append('div').attr('class', 'item')
-	.append('div').attr('class', 'data').append('span');
-
-	d3.select('div.Diagram').selectAll('div.item').data(preparedData)
-	.select('div').style('width', function (d) { return (d.code * 3) + 'px';})
-	.select('span').text(function (d) { return d.name+":"+d.code+":"+d.description;});
+d3.select('div.Charts')
+.selectAll('div.item')
+.data(preparedData)
+.select('div')
+.style('width', function (d) { return (d.code * 3) + 'px';})
+.select('span')
+.text(function (d) { return d.name+":"+d.code+":"+d.description;});
 
 
 </script>
