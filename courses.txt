@@ -1,0 +1,81 @@
+ANT 210 General Anthropology
+ANT 220 Cultural Anthopology
+ANT 221 Comparative Cultures
+ART 111 Art Appreciation
+ART 114 Art History Survey I
+ART 115 Art History Survey II
+ART 116 Survey of American Art
+ART 117 Non-Western Art History
+BIO 111 General Biology I
+BIO 112 General Biology II
+CHM 151 General Chemistry I
+CHM 152 General Chemistry II
+CIS 115 Intro to Programming & Logic
+CSC 120 Computing Fundamentals I
+CSC 134 C++ Programming
+CSC 151 Java Programming
+COM 231 Public Speaking
+DAN 110 Dance Appreciation
+DRA 111 Theatre Appreciation
+DRA 112 Literature of the Theatre
+DRA 122 Oral Interpretation
+ECO 151 Survey of Economics
+ECO 251 Principles Microeconomics
+ECO 252 Principles Macroeconomics
+ENG 111 Expository Writing
+ENG 112 Argument-Based Research
+ENG 231 American Literature I
+ENG 232 American Literature II
+ENG 241 British Literature I
+ENG 242 British Literature II
+ENG 251 Western World Literature I
+ENG 252 Western World Literature II
+FRE 111 Elementary French I
+GEO 111 World Regional Geopraphy
+GER 111 Elementary German I
+HIS 111 World Civilizations I
+HIS 112 World Civilizations II
+HIS 131 American History I
+HIS 132 American History II
+HUM 115 Critical Thinking
+HUM 120 Cultural Studies
+HUM 130 Myth in Human Culture
+HUM 211 Humanities I
+HUM 212 Humanities II
+MAT 152 Statistics
+MAT 171 Pre-calculus Algebra
+MAT 172 Pre-calculus Trigonometry
+MAT 263 Brief Calculus
+MAT 271 Calculus I
+MAT 272 Calculus II
+MAT 273 Calculus III
+MAT 280 Linear Algebra
+MAT 285 Differential Equations
+MUS 110 Music Appreciation
+MUS 112 Introduction to Jazz
+PHI 215 Philosophical Issues
+PHI 220 Western Philosophy I
+PHI 221 Western Philosophy II
+PHI 240 Introduction to Ethics
+PHY 151 College Physics I
+PHY 152 College Physics II
+PHY 251 General Physics I
+PHY 252 General Physics II
+POL 110 Introduction Political Science
+POL 120 American Government
+POL 210 Comparative Government
+POL 220 International Relations
+PSY 150 General Psychology
+PSY 237 Social Psychology
+PSY 241 Developmental Psychology
+PSY 281 Abnormal Psychology
+REL 111 Eastern Religions
+REL 211 Introduction to Old Testament
+REL 212 Introduction to New Testament
+SPA 111 Elementary Spanish I
+SOC 210 Introduction to Sociology
+SOC 213 Sociology of the Family
+SOC 220 Social Problems
+SOC 225 Social Diversity
+ACA 111 SAMPLE1
+ACA 120 SAMPLE2
